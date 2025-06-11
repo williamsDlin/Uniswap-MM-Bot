@@ -1,0 +1,31 @@
+# Uniswap V3 Bot Configuration
+# Copy this file to .env and fill in your actual values
+
+# REQUIRED: Wallet Configuration
+PRIVATE_KEY=0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+PUBLIC_ADDRESS=0x1234567890abcdef1234567890abcdef12345678
+INFURA_GOERLI_RPC_URL=https://goerli.infura.io/v3/your_infura_project_id
+
+# OPTIONAL: API Keys
+ETHERSCAN_API_KEY=your_etherscan_api_key_here
+
+# OPTIONAL: Bot Configuration (defaults will be used if not specified)
+CHECK_INTERVAL_MINUTES=5
+BOLLINGER_WINDOW=20
+BOLLINGER_STD_DEV=2.0
+MIN_POSITION_SIZE_ETH=0.001
+MAX_POSITION_SIZE_ETH=0.01
+
+# OPTIONAL: Gas Configuration
+MAX_GAS_PRICE_GWEI=50
+GAS_LIMIT_BUFFER=1.2
+
+# OPTIONAL: Safety Configuration
+MAX_SLIPPAGE_PERCENT=1.0
+MIN_ETH_BALANCE=0.01
+
+# IMPORTANT NOTES:
+# - Never commit your actual .env file to version control
+# - Use only testnet tokens - this is for Goerli testnet only
+# - Keep minimal amounts in your bot wallet
+# - Test thoroughly before any production use 
